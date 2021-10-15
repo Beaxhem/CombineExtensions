@@ -11,7 +11,7 @@ public struct CancellableBag {
 
     @resultBuilder
     public struct CancellableBuilder {
-        static func buildBlock(_ components: AnyCancellable...) -> [AnyCancellable] {
+        public static func buildBlock(_ components: AnyCancellable...) -> [AnyCancellable] {
             components
         }
     }
